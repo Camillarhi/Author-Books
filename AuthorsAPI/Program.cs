@@ -44,7 +44,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         var hostSide = connUrl.Split("@")[1];
 
         var user = userPassSide.Split(":")[0];
-        var password = userPassSide.Split(":")[1];
+        var password = "fdf12756a52bc5a34a212c7ad9453a0b9b8ebb4fabccfd1720e3643fffd389e9";
         var host = hostSide.Split("/")[0];
         var database = hostSide.Split("/")[1].Split("?")[0];
 
