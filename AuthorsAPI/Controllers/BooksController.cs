@@ -2,6 +2,7 @@
 using AuthorsAPI.IRepository;
 using AuthorsAPI.Model;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -10,6 +11,7 @@ namespace AuthorsAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class BooksController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
